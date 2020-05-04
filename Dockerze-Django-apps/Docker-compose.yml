@@ -1,0 +1,10 @@
+version: '3'
+services:
+  myapp:
+    build: .
+    ports:
+    - "8004:8004"
+    networks:
+      - default
+    command: python manage.py runserver 0.0.0.0:8004
+
